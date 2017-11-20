@@ -11,13 +11,17 @@ package test;
  */
 public class MyThreadTest {
     public static void main(String[] args){
-        for (int i = 0;i<100;i++){
-            System.out.println(Thread.currentThread().getName()+" "+i);
-            if (i==30){
-                Thread myThread1 = new MyThread();
-                Thread myThread2 = new MyThread();
-                myThread1.start();
-                myThread2.start();
+
+    }
+
+    class MyThread implements Runnable{
+        @Override
+        public void run(){
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                //如果在循环中调用sleep,不要去检测中断状态（isInterrupted()），只需捕获InterruptedException
+                e.printStackTrace();
             }
         }
     }
