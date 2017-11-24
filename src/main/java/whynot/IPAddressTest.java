@@ -1,4 +1,4 @@
-package test4dw;
+package whynot;
 
 import java.net.InetAddress;
 

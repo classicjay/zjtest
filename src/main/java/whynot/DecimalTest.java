@@ -1,4 +1,4 @@
-package test4dw;
+package whynot;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

@@ -1,4 +1,4 @@
-package com.example;
+package whynot;
 
 
 import java.util.*;
@@ -12,7 +12,7 @@ import java.util.*;
  * @author zhaojie
  * @version 1.0.0
  */
-public class list2set {
+public class List2SetTest {
 
     public  static void  main(String[] args )
     {

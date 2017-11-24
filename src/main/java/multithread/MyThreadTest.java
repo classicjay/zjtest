@@ -1,4 +1,4 @@
-package test;
+package multithread;
 
 /**
  * <p>Title: BONC -  MyThreadTest</p>

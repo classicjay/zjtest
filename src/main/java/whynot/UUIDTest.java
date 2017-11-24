@@ -1,7 +1,9 @@
-package test4dw;
+package whynot;
+
+import java.util.UUID;
 
 /**
- * <p>Title: BONC -  NumberTest</p>
+ * <p>Title: BONC -  UUIDTest</p>
  * <p>Description:  </p>
  * <p>Copyright: Copyright BONC(c) 2013 - 2025 </p>
  * <p>Company: 北京东方国信科技股份有限公司 </p>
@@ -9,8 +11,9 @@ package test4dw;
  * @author zhaojie
  * @version 1.0.0
  */
-public class NumberTest {
+public class UUIDTest {
     public static void main(String[] args) {
-
+        UUID uuid = UUID.randomUUID();
+		System.out.println(uuid.toString());
     }
 }

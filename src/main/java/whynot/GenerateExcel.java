@@ -1,4 +1,4 @@
-package test4dw;
+package whynot;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -111,14 +111,14 @@ public class GenerateExcel {
             if (!dir.exists()) {
                 dir.mkdirs();
             }
-            String sourceFilename = "test" + ".xls";
+            String sourceFilename = "multithread" + ".xls";
 
             Workbook wb = new HSSFWorkbook();
             File sourceFile = new File(sourceDir + File.separator + sourceFilename);
             FileOutputStream fileOut = new FileOutputStream(sourceFile);
             int rowNum = 0;
             //创建sheet
-            Sheet sheet1 = wb.createSheet("test");
+            Sheet sheet1 = wb.createSheet("multithread");
             //设置默认列宽
             sheet1.setDefaultColumnWidth(13);
             //设置居中
@@ -126,7 +126,7 @@ public class GenerateExcel {
             styleCenter.setAlignment(HorizontalAlignment.CENTER);
 
             Cell cellTitle = sheet1.createRow(rowNum++).createCell(0);
-            cellTitle.setCellValue("test");
+            cellTitle.setCellValue("multithread");
             cellTitle.setCellStyle(styleCenter);
             // 合并单元格，来放title
             sheet1.addMergedRegion(new CellRangeAddress(0, 0, 0, 1));
