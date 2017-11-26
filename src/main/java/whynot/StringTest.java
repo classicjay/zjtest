@@ -1,7 +1,5 @@
 package whynot;
 
-import java.util.StringTokenizer;
-
 /**
  * <p>Title: BONC -  StringTest</p>
  * <p>Description:  </p>
@@ -13,22 +11,28 @@ import java.util.StringTokenizer;
  */
 public class StringTest {
     public static void main(String[] args) {
-        StringBuffer sumValue = new StringBuffer();
-        sumValue.append("a");
-        sumValue.append("|");
-        sumValue.append("b");
-        sumValue.append("|");
-        sumValue.append("c");
-        sumValue.append("|");
-        sumValue.append(0);
-        sumValue.append("|");
-        sumValue.append(null+"|");
-        System.out.println(sumValue.toString());
-        StringTokenizer stK = new StringTokenizer(sumValue.toString(),"|");
+//        StringBuffer sumValue = new StringBuffer();
+//        sumValue.append("a");
+//        sumValue.append("|");
+//        sumValue.append("b");
+//        sumValue.append("|");
+//        sumValue.append("c");
+//        sumValue.append("|");
+//        sumValue.append(0);
+//        sumValue.append("|");
+//        sumValue.append(null+"|");
+//        System.out.println(sumValue.toString());
+//        StringTokenizer stK = new StringTokenizer(sumValue.toString(),"|");
+//
+//        while (stK.hasMoreTokens()){
+//            System.out.println(stK.nextToken());
+//            System.out.println(null!=stK.nextToken());
+//        }
 
-        while (stK.hasMoreTokens()){
-            System.out.println(stK.nextToken());
-            System.out.println(null!=stK.nextToken());
-        }
+        int t="abc".length();
+        System.out.println(t);
+        String[] abc = {"a","b","c"};
+        int t1 = abc.length;
+        System.out.println(t1);
     }
 }
